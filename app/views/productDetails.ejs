@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Product Details</title>
+
+    <link rel="stylesheet" type="text/css" href="../public/css/styles.css">
+</head>
+<body>
+    <h1>Product Details</h1>
+    <div class="product-container">
+        <h2 class="product-name"><%= product.name %></h2>
+        <p class="product-price">Price: $<%= product.price.toFixed(2) %></p>
+        <p class="product-description">Description: <%= product.description %></p>
+        <img class="product-image" src="<%= product.path %>" alt="">
+    </div>
+    <a href="/">Back to Home</a>
+</body>
+</html>
